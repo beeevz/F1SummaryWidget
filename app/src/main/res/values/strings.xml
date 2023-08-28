@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">F1Summary</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">This is just an apk that we needed for the F1 Widget/n and is relatively unused</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="track_name">Track: </string>
+    <string name="track_name_default">Track: Yas Marina Circuit</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+</resources>

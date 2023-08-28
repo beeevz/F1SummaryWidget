@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.F1Summary.AppWidget.Container"
+    android:id="@+id/f1WidgetId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:theme="@style/Theme.F1Summary.AppWidgetContainer">
+
+    <TextView
+        android:id="@+id/trackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/track_name"
+        android:layout_marginBottom="8dp"
+        android:text="@string/track_name_default"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/trackImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trackName"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/example_appwidget_preview"
+        />
+
+    <TextView
+        android:id="@+id/practice1Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackName"
+        android:layout_toRightOf="@id/trackImage"
+        android:layout_toLeftOf="@id/qualifyingTv"
+        android:gravity="center_horizontal"
+        android:text="P1: Fri - 01:00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/practice2Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/practice1Tv"
+        android:layout_toRightOf="@id/trackImage"
+        android:layout_toLeftOf="@id/qualifyingTv"
+        android:gravity="center_horizontal"
+        android:text="P2: Fri - 02:00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/practice3Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/practice2Tv"
+        android:layout_toRightOf="@id/trackImage"
+        android:layout_toLeftOf="@id/qualifyingTv"
+        android:gravity="center_horizontal"
+        android:text="P2: Sat - 09:00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/qualifyingTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackName"
+        android:layout_alignParentEnd="true"
+        android:text="P1: Fri - 01:00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/raceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qualifyingTv"
+        android:layout_alignParentEnd="true"
+        android:text="P2: Fri - 02:00"
+        android:textSize="15sp" />
+
+</RelativeLayout>
